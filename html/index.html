@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập</title>
+    <style>
+      /* Căn giữa */
+      body {
+        background: #f0f2f5;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      /* Hộp */
+      .form-h {
+        background: white;
+        padding: 30px;
+        text-align: center;
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      }
+      /* Ô */
+      input {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      /* Nút */
+      button {
+        width: 100%;
+        padding: 12px;
+        background: cornflowerblue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      button:hover {
+        background: #5a88e6;
+      }
+      /* Khung */
+      .form-k {
+        width: 100%;
+      }
+      h2 {
+        color: #333;
+        margin-bottom: 25px;
+      }
+      p {
+        margin-top: 20px;
+        color: #666;
+      }
+      a {
+        color: cornflowerblue;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-h">
+      <h2>ĐĂNG NHẬP</h2>
+      <form id="loginForm">
+
+        <div class="form-k">
+          <input id="email" type="email" placeholder="Email" required />
+        </div>
+
+        <div class="form-k">
+          <input id="password" type="password" placeholder="Mật khẩu" required />
+        </div>
+
+        <button type="submit">Đăng nhập</button>
+
+        <p>
+        Bạn chưa có tài khoản?
+        <a href="dk.html">Đăng ký ngay</a>
+        </p>
+      </form>
+    </div>
+<script src="../js/dn.js"></script>
+  </body>
+</html>

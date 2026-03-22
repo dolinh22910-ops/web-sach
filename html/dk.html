@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng kí</title>
+    <style>
+      /* Căn giữa */
+      body {
+        background: #f0f2f5;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;    /*tự căn chỉnh*/
+        justify-content: center;   /*ngang */
+        align-items: center;   /*dọc*/
+        height: 100vh;  /*fullscreen,căn giữa theo doc*/
+        margin: 0;
+      }
+      /* Hộp */
+      .form-h {
+        background: white;
+        padding: 30px;   /*khoảng giữa nội dung - viền*/
+        text-align: center;   /*nội dung*/
+        position: relative;   /*ko phá bố cục xung quanh*/
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;   /*bo tròn góc*/
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      }
+      /* Ô */
+      input {
+        display: block;   /*tự xuống dòng*/
+        width: 100%;  
+        padding: 12px;   
+        margin-bottom: 15px;
+        border: 1px solid #ddd;   /*viền*/
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      /* Nút */
+      button {
+        width: 100%;
+        padding: 12px;
+        background: cornflowerblue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;   /*in đậm chữ*/
+        cursor: pointer;   /*trỏ thành bàn tay*/
+        transition: background 0.3s;
+      }
+      button:hover {
+        background: #5a88e6;
+      }
+      /* Khung */
+      .form-k {
+        width: 100%;
+      }
+      h2 {
+        color: #333;
+        margin-bottom: 25px;
+      }
+      p {
+        margin-top: 20px;
+        color: #666;
+      }
+      a {
+        color: cornflowerblue;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-h">
+      <h2>ĐĂNG KÝ</h2>
+      <form id="registerForm">
+        
+        <div class="form-k">
+          <input id="username" type="text" placeholder="Họ và tên" required />
+        </div>
+
+        <div class="form-k">
+          <input id="email" type="email" placeholder="Email" required />
+        </div>
+
+        <div class="form-k">
+          <input id="password" type="password" placeholder="Mật khẩu" required />
+        </div>
+
+        <button type="submit">Đăng ký</button>
+
+        <p>
+        Bạn đã có tài khoản?
+        <a href="index.html">Đăng nhập ngay</a>
+        </p>
+      </form>
+    </div>
+<script src="../js/dk.js"></script>
+  </body>
+</html>

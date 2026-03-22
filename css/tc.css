@@ -1,0 +1,64 @@
+/* tc.css - Styles tùy chỉnh cho trang chủ Anime */
+
+/* Banner chính */
+.simple-banner {
+    background: linear-gradient(135deg, #6495ED, #4169E1);
+    color: white;
+    padding: 80px 20px;
+    margin-bottom: 30px;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Hiệu ứng cho card Anime */
+.anime-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.anime-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2) !important;
+}
+
+.anime-card img {
+    transition: transform 0.5s ease;
+}
+
+.anime-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Tùy chỉnh thanh tìm kiếm trong Navbar */
+.navbar .form-control {
+    border-radius: 20px 0 0 20px;
+    border: none;
+}
+
+.navbar .btn-primary {
+    border-radius: 0 20px 20px 0;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #1a1a1a;
+    border-top: 4px solid cornflowerblue;
+}
+
+.social-icons a:hover {
+    color: cornflowerblue !important;
+    transform: scale(1.2);
+    display: inline-block;
+    transition: 0.3s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .simple-banner h1 {
+        font-size: 28px;
+    }
+    
+    .simple-banner p {
+        font-size: 16px;
+    }
+}

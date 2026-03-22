@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chi tiết truyện</title>
+<link rel="stylesheet" href="../css/tc.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+<div class="row">
+
+<!-- Ảnh truyện -->
+<div class="col-md-4">
+<img id="animeImage" class="img-fluid rounded shadow">
+</div>
+
+<!-- Thông tin -->
+<div class="col-md-8">
+
+<h2 id="animeTitle"></h2>
+
+<p>
+⭐ <strong>Điểm:</strong> <span id="animeScore"></span>
+</p>
+
+<p>
+🏷 <strong>Thể loại:</strong> <span id="animeGenres"></span>
+</p>
+
+<p id="animeSynopsis"></p>
+
+<h4 class="text-danger">
+💰 Giá: <span id="animePrice"></span> VNĐ
+</h4>
+
+<button class="btn btn-success me-2" onclick="buyAnime()">
+🛒 Mua ngay
+</button>
+
+<button class="btn btn-primary" onclick="addToCart()">
+➕ Thêm vào giỏ
+</button>
+
+</div>
+
+</div>
+
+</div>
+<link rel="stylesheet" href="../css/tc.css">
+<script src="../js/ct.js"></script>
+</body>
+</html>
